@@ -1,7 +1,7 @@
 const http = require("node:http");
 const fs = require("fs/promises");
 
-const PORT = 8001;
+const PORT = process.env.PORT || 3000;
 
 // create a local server to receive data from
 const server = http.createServer((_, response) => {
